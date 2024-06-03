@@ -32,9 +32,7 @@ app.get("/get-link", (req, res) => {
 });
 
 app.get("/get-version", (req, res) => {
-  if (linkStore) {
     res.status(200).send({ version: version });
-  }
 });
 
 app.listen(port, () => {
