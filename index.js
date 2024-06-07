@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const version = "8f7b14b2-86fc-4a64-b0c3-f0555a086f30";
+const version = "ad1917b9-c404-4792-90cc-b88c531fe326";
 
 // Porta a ser usada pelo servidor, definida pela variável de ambiente PORT ou padrão 3000
 const port = process.env.PORT || 3000;
@@ -32,7 +32,7 @@ app.get("/get-link", (req, res) => {
 });
 
 app.get("/get-version", (req, res) => {
-    res.status(200).send({ version: version });
+  res.status(200).send({ version: version });
 });
 
 app.listen(port, () => {
